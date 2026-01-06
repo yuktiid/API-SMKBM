@@ -1,0 +1,5 @@
+Run Laravel lumen = php -S localhost:8080 -t public
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+php artisan cache:clear && php artisan config:clear && php artisan route:clear
