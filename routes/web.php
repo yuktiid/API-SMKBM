@@ -12,6 +12,7 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
+// ini ruternya
 
 $router->get('/cek', 'ImageController@cek');
 
@@ -30,7 +31,7 @@ $router->group(['prefix' => 'formulir'], function () use ($router) {
 
     // POST /formulir - Create new formulir
     $router->post('/', 'FormulirController@store');
-    
+
 
     // PUT /formulir/{id} - Update formulir
     $router->put('/{id}', 'FormulirController@update');
